@@ -1,0 +1,15 @@
+@mixin addAnimation($second: 1s) {
+    animation-duration: $second;
+}
+
+sidebar {
+    @include addAnimation(1.5s);
+}
+
+header, footer {
+    @include addAnimation(2s);
+}
+
+main {
+    @include addAnimation(2s);
+}

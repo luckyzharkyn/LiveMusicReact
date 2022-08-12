@@ -20,12 +20,13 @@
     footer {
         grid-area: footer;
     }
-    header, sidebar, main, footer {
-        border: 1px solid black;
-    }
+    // header, sidebar, main, footer {
+    //     border: 1px solid black;
+    // }
 }
 
 @import './style/header.scss';
 @import './style/sidebar.scss';
 @import './style/main.scss';
 @import './style/footer.scss';
+@import './style/animations.scss';

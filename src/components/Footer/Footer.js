@@ -1,6 +1,6 @@
 const Footer = () => {
     return <>
-        <footer>
+        <footer className="vanishIn">
           <img src='https://lmusic.kz/images/logo-footer.png' />
           <div className='authorRights'>
             Все права защищены

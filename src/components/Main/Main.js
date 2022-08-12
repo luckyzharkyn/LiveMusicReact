@@ -97,7 +97,7 @@ const Main = () => {
     const LimitLength = str => str.length > 20 ? str.slice(0, 18) + "..." : str;
     
     return <>
-        <main>
+        <main className="swap">
             <div className='first_block'>
                 {/* <div className='popular'>
                   <h3>Популярное</h3>

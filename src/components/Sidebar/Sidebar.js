@@ -87,7 +87,7 @@ const Sidebar = () => {
 
 
     return <>
-        <sidebar>
+        <sidebar className="vanishIn">
             <div className='logo'>
               <img src='https://lmusic.kz/images/logo.png' />
             </div>

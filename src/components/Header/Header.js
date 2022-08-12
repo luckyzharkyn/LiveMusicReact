@@ -28,7 +28,7 @@ const Header = () => {
     })
 
     return <>
-        <header>
+        <header className="vanishIn">
           <div className='searchbox'>
             <input type="text" placeholder="Какую песню ищите?"/>
             <ul>
