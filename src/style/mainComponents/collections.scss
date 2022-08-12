@@ -1,0 +1,13 @@
+.collections {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            margin: 20px;
+            img {
+                width: 150px;
+                border-radius: 30px;
+            }
+        }
+    }
+}

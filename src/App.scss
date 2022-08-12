@@ -1,0 +1,31 @@
+@import './style/normalize.scss';
+
+.App {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 100% 100% 100%;
+    grid-template-areas: 'sidebar header'
+                         'sidebar main'
+                         'sidebar footer';
+
+    header {
+        grid-area: header;
+    }
+    sidebar {
+        grid-area: sidebar;
+    }
+    main {
+        grid-area: main;
+    }
+    footer {
+        grid-area: footer;
+    }
+    header, sidebar, main, footer {
+        border: 1px solid black;
+    }
+}
+
+@import './style/header.scss';
+@import './style/sidebar.scss';
+@import './style/main.scss';
+@import './style/footer.scss';

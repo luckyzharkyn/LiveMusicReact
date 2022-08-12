@@ -1,0 +1,29 @@
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(206, 217, 238);
+    // align-items: center;
+
+     .second_block {
+        border: 1px solid black;
+    }
+
+    .first_block {
+        .slider {
+            background-image: url('https://lmusic.kz/images/cover/asylzhan-abdulla-bolamyn-hanzadan.jpeg');
+            background-repeat: no-repeat;
+        }
+
+
+        @import './mainComponents/newSongs.scss';
+        
+        @import './mainComponents/topSongs.scss';
+
+       @import './mainComponents/collections.scss';
+    }
+
+    .second_block {
+        width: 500px;
+    }
+}

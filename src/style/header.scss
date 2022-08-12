@@ -1,0 +1,36 @@
+header {
+    padding-top: 10px;
+    .searchbox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 10px;
+
+        input {
+            font-size: 17px;
+            padding: 10px 0 10px 20px;
+            width: 400px;
+            border-radius: 30px;
+            &:focus {
+                box-shadow: 0 0 10px blue;
+            }
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            padding: 0 10px;
+
+            li {
+                margin-right: 10px;
+                a {
+                    img {
+                        width: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

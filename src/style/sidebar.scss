@@ -1,0 +1,28 @@
+sidebar {
+    background-color: #06478c;
+
+    .menu{
+        margin: 20px;
+
+        .nameCategories {
+            font-size: 20px;
+            color: #87a2e6;
+        }
+        li {
+            margin-top: 10px;
+            margin-left: 10px;
+            padding-top: 10px;
+            a {
+                font-size: 18px;
+                color: #fff;
+                text-decoration: none;
+
+                transition: 0.2s ease;
+                &:hover {
+                    color: yellow;
+                }
+            }
+
+        }
+    }
+}
