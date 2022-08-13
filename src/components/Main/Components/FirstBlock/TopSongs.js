@@ -1,16 +1,20 @@
 import React from 'react'
 
-const TopSongs = ({songsList, LimitLength}) => {
-  const music = songsList.map(obj => {
+const TopSongs = ({songsList}) => {
+  const music = songsList.map((obj, index) => {
     return <li>
-        <span>1</span>
+        <span>{index + 1}</span>
         <a href={obj.pathSong}>
-                <img src={obj.imgPath}/>
-                <h4>{LimitLength(obj.name)}</h4>
-              </a>
-              <a href={obj.pathAuthor}>
-                <h5>{LimitLength(obj.author)}</h5>
-              </a>
+          <img src={obj.imgPath}/>
+        </a>
+        <div>
+          <a href={obj.pathSong}>
+            <h4>{obj.name}</h4>
+          </a>
+          <a href={obj.pathAuthor}>
+            <h5>{obj.author}</h5>
+          </a>
+        </div>
     </li>
   })
 

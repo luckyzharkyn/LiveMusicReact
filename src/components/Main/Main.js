@@ -46,7 +46,7 @@ const Main = () => {
           imgPath: 'https://lmusic.kz/images/cover/muhtar-hanzada-bolashak-kelinshegim.jpeg',
           pathSong: "#",
           pathAuthor: "#"
-        }
+        },
       ],
       'topSongs' : [
         {
@@ -91,10 +91,47 @@ const Main = () => {
           pathSong: "#",
           pathAuthor: "#"
         }
+      ],
+      'collections' : [
+        {
+          name: 'Новинки K-Pop',
+          imgPath: 'https://lmusic.kz/images/album_cover/novinki-k-pop.jpg',
+          pathCollection: '#'
+        },
+        {
+          name: 'Әке туралы әндер жыйнағы',
+          imgPath: 'https://lmusic.kz/images/album_cover/ake-turaly-ander-zhyjnagy.jpg',
+          pathCollection: '#'
+        },
+        {
+          name: 'Үздік қазақша хит әндер 2020 Топ 40',
+          imgPath: 'https://lmusic.kz/images/album_cover/uzdik-kazaksha-hit-ander-2020-top-40.jpg',
+          pathCollection: '#'
+        },
+        {
+          name: 'Мектеп туралы әндер',
+          imgPath: 'https://lmusic.kz/images/album_cover/mektep-turaly-ander.jpg',
+          pathCollection: '#'
+        },
+        {
+          name: 'Қазақша хит әндер 2022',
+          imgPath: 'https://lmusic.kz/images/album_cover/kazaksha-hit-ander-2022.jpg',
+          pathCollection: '#'
+        },
+        {
+          name: 'Алматы туралы әндер',
+          imgPath: 'https://lmusic.kz/images/album_cover/almaty-turaly-ander.jpg',
+          pathCollection: '#'
+        },
+        {
+          name: '',
+          imgPath: '',
+          pathCollection: '#'
+        },
       ]
     }
 
-    const LimitLength = str => str.length > 20 ? str.slice(0, 18) + "..." : str;
+    const LimitLength = str => str.length > 15 ? str.slice(0, 14) + "..." : str;
     
     return <>
         <main className="swap">
@@ -111,9 +148,11 @@ const Main = () => {
                 />
                 <TopSongs 
                   songsList={songsList['topSongs']}
-                  LimitLength={LimitLength}
                   />
-                <Collections />
+                <Collections 
+                  songsList={songsList['collections']}
+                  LimitLength={LimitLength}
+                />
             </div>
             <div className='second_block'>
               second_block

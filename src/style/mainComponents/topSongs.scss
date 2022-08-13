@@ -1,15 +1,56 @@
 .topSongs {
+    padding: 50px 0 0 50px;
+    h3 {
+        @include title();
+    }
     ul {
+        display: flex;
+        flex-direction: column;
         li {
-            margin: 20px;
-            padding: 10px;
+            margin: 20px 0 0 0;
+            padding: 10px 0;
 
             display: flex;
             align-items: center;
-            background-color: beige;
-            border-radius: 30px;
-            img {
-                width: 50px;
+
+            background-color: #fff;
+            border-radius: 5px;
+
+            &:hover {
+                background-color:bisque;
+            }
+
+            span {
+                margin: 0 20px;
+                
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+                img {
+                    width: 50px;
+                    border-radius: 5px;
+                }
+                h4 {
+                    margin-bottom: 5px;
+                    
+                    font-weight: bold;
+                    font-size: 17px;
+                }
+                h5 {
+                    color: #1a3ef6;
+                }
+            }
+
+            div {
+                margin-left: 10px;
             }
         }
     }

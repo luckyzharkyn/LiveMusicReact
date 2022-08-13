@@ -1,12 +1,36 @@
 .collections {
+    padding: 50px 0 0 50px;
+    h3 {
+        @include title();
+    }
     ul {
         display: flex;
         flex-wrap: wrap;
+
+        text-align: center;
         li {
             margin: 20px;
-            img {
-                width: 150px;
-                border-radius: 30px;
+
+            a {
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+                font-size: 17px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                img {
+                    width: 180px;
+                    border-radius: 10px;
+                    &:hover {
+                        box-shadow: 0 0 15px black;
+                    }
+                }
+            }
+            a > img {
+                margin-bottom: 10px;
             }
         }
     }

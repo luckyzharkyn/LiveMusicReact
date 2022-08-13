@@ -1,12 +1,32 @@
 footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+
     background-color: #001d2b;
     color: #fff;
-    img {
-        width: 200px;
-    }
     .authorRights {
+        margin-left: 50px;
         width: 100%;
+    }
+    ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 10px;
+
+        li {
+            margin-right: 10px;
+            a {
+                img {
+                    width: 30px;
+                    border-radius: 30px;
+                    &:hover {
+                        box-shadow: 0 0 10px blue;
+                    }
+                }
+            }
+        }
     }
 }
